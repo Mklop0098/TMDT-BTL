@@ -22,7 +22,7 @@ export const ShopGrid = (props) => {
                     <i className={`fa-solid fa-grip ${grid === "grid" && "active"}`} onClick={() => setGrid("grid")}></i>
                     <i className={`fa-solid fa-list ${grid === "list" && "active"}`} onClick={() => setGrid("list")}></i>
                 </div>
-                <span>There are {`${products.length}`} Products.</span>
+                <span>There are {`${props.props.length}`} Products.</span>
                 <div className="shop-select">
                     <label className='shop-product'>Sort by</label>
                     <select onChange={handleChange} value={sortby}>
